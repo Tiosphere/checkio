@@ -1,9 +1,10 @@
+from collections import Counter
+from itertools import count
 def most_frequent(data: list) -> str:
     """
     determines the most frequently occurring string in the sequence.
     """
-    # your code here
-    return None
+    return Counter(data).most_common(1)[0][0]
 
 
 if __name__ == "__main__":
