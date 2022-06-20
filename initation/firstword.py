@@ -3,10 +3,7 @@ def first_word(text: str) -> str:
     returns the first word in a given text.
     """
     index = text.find(" ")
-    if index == -1:
-        return text
-    else:
-        return text[:index]
+    return text[:index] + text[index].rstrip(" ")
     # your code here
 
 
