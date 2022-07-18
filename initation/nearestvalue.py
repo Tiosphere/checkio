@@ -1,6 +1,8 @@
 def nearest_value(values: set, one: int) -> int:
     # your code here
-    return None
+    lst = list(values)
+    diff = list(map(lambda n: abs(n - one), lst))
+    return lst[diff.index(min(diff))]
 
 
 if __name__ == '__main__':
