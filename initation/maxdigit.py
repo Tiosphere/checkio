@@ -1,6 +1,6 @@
 def max_digit(number: int) -> int:
     # your code here
-    return 0
+    return int(list(map(max, str(number)))[0])
 
 
 if __name__ == '__main__':
