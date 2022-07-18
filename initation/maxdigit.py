@@ -1,6 +1,6 @@
 def max_digit(number: int) -> int:
     # your code here
-    return int(list(map(max, str(number)))[0])
+    return int(sorted(str(number))[-1])
 
 
 if __name__ == '__main__':
@@ -13,4 +13,5 @@ if __name__ == '__main__':
     assert max_digit(634) == 6
     assert max_digit(1) == 1
     assert max_digit(10000) == 1
+    assert max_digit(3053456) == 6
     print("Coding complete? Click 'Check' to earn cool rewards!")
